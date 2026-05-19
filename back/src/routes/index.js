@@ -1,0 +1,48 @@
+const express = require("express");
+const router = express.Router();
+
+const authRoutes = require("./auth.routes");
+const productRoutes = require("./product.routes");
+const collectionRoutes = require("./collection.routes");
+const categoryRoutes = require("./category.routes");
+const testimonialRoutes = require("./testimonial.routes");
+const inspirationRoutes = require("./inspiration.routes");
+const statRoutes = require("./stat.routes");
+const catalogueRoutes = require("./catalogue.routes");
+const finishTypeRoutes = require("./finishType.routes");
+const tileSizeRoutes = require("./tileSize.routes");
+const spaceRoutes = require("./space.routes");
+const pageHeroImageRoutes = require("./pageHeroImage.routes");
+const heroSlideRoutes = require("./heroSlide.routes");
+const tileCalculatorConfigRoutes = require("./tileCalculatorConfig.routes");
+const homeApplicationAreaRoutes = require("./homeApplicationArea.routes");
+const pressReleaseRoutes = require("./pressRelease.routes");
+const promoOfferRoutes = require("./promoOffer.routes");
+const mediaAssetRoutes = require("./mediaAsset.routes");
+const coverageRoutes = require("./coverage.routes");
+const contactOfficeLocationRoutes = require("./contactOfficeLocation.routes");
+const siteConfigRoutes = require("./siteConfig.routes");
+
+router.use("/auth", authRoutes);
+router.use("/products", productRoutes);
+router.use("/collections", collectionRoutes);
+router.use("/categories", categoryRoutes);
+router.use("/testimonials", testimonialRoutes);
+router.use("/inspirations", inspirationRoutes);
+router.use("/stats", statRoutes);
+router.use("/catalogues", catalogueRoutes);
+router.use("/finish-types", finishTypeRoutes);
+router.use("/tile-sizes", tileSizeRoutes);
+router.use("/spaces", spaceRoutes);
+router.use("/page-hero-images", pageHeroImageRoutes);
+router.use("/hero-slides", heroSlideRoutes);
+router.use("/tile-calculator-configs", tileCalculatorConfigRoutes);
+router.use("/home-application-areas", homeApplicationAreaRoutes);
+router.use("/press-releases", pressReleaseRoutes);
+router.use("/promo-offers", promoOfferRoutes);
+router.use("/media-assets", mediaAssetRoutes);
+router.use("/coverages", coverageRoutes);
+router.use("/contact-office-locations", contactOfficeLocationRoutes);
+router.use("/site-configs", siteConfigRoutes);
+
+module.exports = router;
